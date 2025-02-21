@@ -1,0 +1,50 @@
+.contact{
+    height: 75vh;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.map {
+    flex: 1;
+    width: 40vw;
+}
+
+form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e65c00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        height: 250px;
+    }
+}

@@ -1,0 +1,58 @@
+/* About Page Styles */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-cart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 32px;
+    color: #02345a;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-cart {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+    }
+}
